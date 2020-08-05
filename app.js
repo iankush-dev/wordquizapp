@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const dburl = 'mongodb+srv://root:mongodb143@cluster0.lnjso.mongodb.net/words?retryWrites=true&w=majority'
+const dburl = 'mongodb+srv://xxxx:xxxxxx@xxxx.xxxx.xxxx.xxx/xxxx?retryWrites=true&w=majority'
 
 const app = express()
 
