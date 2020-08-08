@@ -5,6 +5,11 @@ function getById(id) {
     return allWords
 }
 
+function getAll() {
+    let allWords = Words.find()
+    return allWords
+}
+
 async function saveEntity(req) {
 
     const wordObj = new Words({
@@ -21,4 +26,4 @@ async function saveEntity(req) {
     }
 }
 
-module.exports = { getById, saveEntity }
+module.exports = { getById, getAll, saveEntity }

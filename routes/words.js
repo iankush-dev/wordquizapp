@@ -1,12 +1,11 @@
 const express = require('express')
 const { Validator } = require('node-input-validator')
 const router = express.Router()
-const Words = require('../schema/wordsentity')
 const WordImpl = require('../impl/wordimpl')
 
 router.get('/get-all', async (req, res) => {
     try {
-        const allWords = await Words.find()
+        const allWords = await WordImpl.getAll()
         res.json(allWords)
     } catch (err) {
         res.send('Error ' + err)
